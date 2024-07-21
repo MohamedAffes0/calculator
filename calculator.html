@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Calculator</title>
+        <link rel="icon" href="calc.png">
+        <link rel="stylesheet" href="calculator.css">
+        
+    </head>
+    <body>
+        <div id="container" class="container">
+            <div>
+                <input  id="display" class="display" type="text" readonly >
+            </div>
+            <div class="numbers">
+                <button onclick="add_to_display('+')" class=" n op">+</button>
+                <button onclick="add_to_display('7')" class=" n">7</button>
+                <button onclick="add_to_display('8')" class=" n">8</button>
+                <button onclick="add_to_display('9')" class=" n">9</button>
+                <button onclick="add_to_display('-')" class=" n op">-</button>
+                <button onclick="add_to_display('4')" class="n">4</button>
+                <button onclick="add_to_display('5')" class="n">5</button>
+                <button onclick="add_to_display('6')" class="n">6</button>
+                <button onclick="add_to_display('*')" class=" n op">x</button>
+                <button onclick="add_to_display('1')" class="n">1</button>
+                <button onclick="add_to_display('2')" class="n">2</button>
+                <button onclick="add_to_display('3')" class="n">3</button>
+                <button onclick="add_to_display('/')" class=" n op">/</button>
+                <button onclick="add_to_display('.')" class=" n op">.</button>
+                <button onclick="add_to_display('0')" class=" n">0</button>
+                <button onclick="calcul()" class="n= n op">=</button>
+                <button onclick="effacer()" class="cl n op">C</button>
+            </div>
+        </div>
+        <script src="calculator.js"></script>
+    </body>
+</html>
